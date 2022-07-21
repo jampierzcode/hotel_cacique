@@ -1,0 +1,39 @@
+.button-toggle{
+    height: 2rem;
+    width: 2.5rem;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+    top: 1rem;
+    right: 1.5rem;
+}
+.button-toggle::after,.button-toggle::before,.linea-toggle{
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: $white-30;
+    height: 5px;
+    position: absolute;
+    transition: transform .7s, bottom .5s, top .5s;
+}
+.button-toggle::after{
+    bottom: 0;
+}
+.linea-toggle{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.button-toggle::before{
+    top: 0;
+}
+.active::after{
+    transform: translateY(50%) rotate(-45deg);
+    bottom: 50%;
+}
+.active::before{
+    transform: translateY(-50%) rotate(45deg);
+    top: 50%;
+}
+.active .linea-toggle{
+    transform: scale(10%);
+}
