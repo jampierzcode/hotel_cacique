@@ -1,8 +1,6 @@
 //box shadow
 $box-shadowHeader:0px 1px 10px hsl(0,0,70);
 $shadow-50:0px 0px 10px hsl(0,0,50);
-//fonts
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 //border
 $border-black:1px solid black;
 //sectio
@@ -43,12 +41,14 @@ $z-auto: auto;
 //
 
 //header
-$header-height-pc:4rem;
+$header-height-pc: 12rem;
 $header-height-pcMax:4.5rem;
-$header-backgroundColor: $white-100;
+$header-backgroundColor: #FFFFFF;
 $header-color: $white-10;
 
 
 //----------------------------------------------------
 //main banner
 $height-mainBanner: calc(100vh - 4rem);
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');

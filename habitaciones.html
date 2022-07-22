@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>Hotel Cacique</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-contacto section-xl flx-ja-cc">
+        <div class="logo-container">
+          <a href="#" class="logo-img">
+            <img src="./img/logo/casaandina_logo.png" alt="Logo EDsoft">
+          </a>
+        </div>
+        <div class="header-wsp flx-a-c">
+          <p>Mejor tarifa garantizada</p>
+          <h2>Reservas al whatsapp</h2>
+          <a class="a-wsp" href="#">Reservar</a>
+        </div>
+      </div>
+      <!--  -->
+
+      <div class="header-menu section-xl flx-a-c">
+        <div id="button-toggle" class="button-toggle">
+          <div class="linea-toggle"></div>
+        </div>
+        <div class="header-nav" id="menu-container">
+          <nav id="menu-toggle">
+            <ul class="flx-a-c" id="ul-menu">
+                <li>
+                    <a class="header-option" href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a class="header-option" href="./index.html#servicios">Servicios</a>
+                </li>
+                <li>
+                    <a class="header-option" href="./index.html#quienessomos">¿Quienes somos?</a>
+                </li>
+                <li>
+                    <a class="header-option" href="#./index.html#galeria">Galeria</a>
+                </li>
+                <li>
+                    <a class="header-option" href="#">Habitaciones</a>
+                </li>
+            </ul>
+          </nav>
+        </div>      
+      </div>
+    </header>
+    <!--  -->
+    <main class="main">
+      <section class="section-habitaciones" id="habitaciones">
+        <div class="wrapper-habitaciones flx-ja-cc">
+          <div class="slide-contenedor">
+            <div class="miSlider fade">
+                <img src="./img/habitaciones/individual.jpg" alt="">
+            </div>
+            <div class="miSlider fade">
+                <img src="./img/habitaciones/doble.jpg" alt="">
+            </div>
+            <div class="miSlider fade">
+                <img src="./img/habitaciones/triple.png" alt="">
+            </div>
+            <div class="direcciones">
+                <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+                <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+            </div>
+            <div class="barras">
+                <span class="barra active" onclick="posicionSlide(1)"></span>
+                <span class="barra" onclick="posicionSlide(2)"></span>
+                <span class="barra" onclick="posicionSlide(3)"></span>
+            </div>
+          </div>
+
+          <div class="habitaciones-info">
+            <h2>Habitaciones hotel cacique</h2>
+            <div class="habitaciones-tipo">
+              <button>Individual</button>
+              <button>Doble</button>
+              <button>Triple</button>
+              <button>King</button>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perspiciatis tempora quasi nisi asperiores ullam nemo dolores, dolore, deserunt aliquid fuga consequatur! Ut quas fugiat nesciunt nihil natus? Natus, rerum?</p>
+          </div>
+        </div>
+        <div class="wrapper-places">
+            <div class="place flx-a-c">
+                <div class="place-info flx-ja-cc">
+                    <h2>Hotel cacique</h2>
+                    <h3>Habitaciones</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aspernatur, similique modi repellendus consequatur, nemo veniam fugiat quidem eos commodi nam voluptates, quo deserunt laborum hic maxime. Vitae, voluptatum aperiam.</p>
+                    <a href="#">RESERVAR</a>
+                </div>
+                <div class="place-img">
+                    <img src="./img/habitaciones/place-cuarto.webp" alt="">
+                </div>
+            </div>
+            <div class="place flx-a-c">
+                <div class="place-info flx-ja-cc">
+                    <h2>Hotel cacique</h2>
+                    <h3>Restaurante</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aspernatur, similique modi repellendus consequatur, nemo veniam fugiat quidem eos commodi nam voluptates, quo deserunt laborum hic maxime. Vitae, voluptatum aperiam.</p>
+                    <a href="#">RESERVAR</a>
+                </div>
+                <div class="place-img">
+                    <img src="./img/habitaciones/place-restaurant.jpg" alt="">
+                </div>
+            </div>
+            <div class="place flx-a-c">
+                <div class="place-info flx-ja-cc">
+                    <h2>Hotel cacique</h2>
+                    <h3>Bar</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aspernatur, similique modi repellendus consequatur, nemo veniam fugiat quidem eos commodi nam voluptates, quo deserunt laborum hic maxime. Vitae, voluptatum aperiam.</p>
+                    <a href="#">RESERVAR</a>
+                </div>
+                <div class="place-img">
+                    <img src="./img/habitaciones/place-bar.jpg" alt="">
+                </div>
+            </div>
+        </div>
+      </section>
+    </main>
+    <!--  -->
+
+    <footer class="footer flx-a-c">
+      <p>Todos los derechos reservados © 2020</p>
+    </footer>
+
+  <script src="./js/linkScroll.js"></script>
+  <script src="./js/menuToggle.js"></script>
+  <script src="./js/slide.js"></script>
+
+  </body>
+</html>
