@@ -4,19 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Hotel Cacique</title>
+    <!-- swiper import -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Hostal Karamolle</title>
   </head>
   <body>
     <header class="header">
       <div class="header-contacto section-xl flx-ja-cc">
         <div class="logo-container">
           <a href="#" class="logo-img">
-            <img src="./img/logo/casaandina_logo.png" alt="Logo EDsoft">
+            <img src="./img/logo/karamolle1.png" alt="Logo EDsoft" />
           </a>
         </div>
         <div class="header-wsp flx-a-c">
@@ -34,50 +41,72 @@
         <div class="header-nav" id="menu-container">
           <nav id="menu-toggle">
             <ul class="flx-a-c" id="ul-menu">
-                <li>
-                    <a class="header-option" href="#inicio">Inicio</a>
-                </li>
-                <li>
-                    <a class="header-option" href="#servicios">Servicios</a>
-                </li>
-                <li>
-                    <a class="header-option" href="#quienessomos">¿Quienes somos?</a>
-                </li>
-                <li>
-                    <a class="header-option" href="#galeria">Galeria</a>
-                </li>
-                <li>
-                    <a class="header-option" href="./habitaciones.html">Habitaciones</a>
-                </li>
+              <li>
+                <a class="header-option" href="#inicio">Inicio</a>
+              </li>
+              <li>
+                <a class="header-option" href="#servicios">Servicios</a>
+              </li>
+              <li>
+                <a class="header-option" href="#quienessomos"
+                  >¿Quienes somos?</a
+                >
+              </li>
+              <li>
+                <a class="header-option" href="#galeria">Galeria</a>
+              </li>
+              <li>
+                <a class="header-option" href="./habitaciones.html"
+                  >Habitaciones</a
+                >
+              </li>
             </ul>
           </nav>
-        </div>      
+        </div>
       </div>
     </header>
     <!--  -->
     <main class="main">
       <section class="section-inicio" id="inicio">
-        <div class="wrapper-inicio">
-  
+        <div class="swiper portada-swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide slide-portada">
+              <img src="img/habitaciones/doble.jpg" alt="">
+              <div class="overlay-slide">
+
+              </div>
+              <div class="content-slide">
+
+                <h1>Hostal Karamolle</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
         </div>
       </section>
       <!--  -->
       <section class="section-servicios" id="servicios">
-        <div class="wrapper-servicios">
-  
-        </div>
+        <div class="wrapper-servicios"></div>
       </section>
       <!--  -->
       <section class="section-quienesSomos" id="quienessomos">
-        <div class="wrapper-quienesSomos">
-  
-        </div>
+        <div class="wrapper-quienesSomos"></div>
       </section>
       <!--  -->
       <section class="section-galeria" id="galeria">
-        <div class="wrapper-galeria">
-  
-        </div>
+        <div class="wrapper-galeria"></div>
       </section>
     </main>
     <!--  -->
@@ -85,7 +114,11 @@
     <footer class="footer flx-a-c">
       <p>Todos los derechos reservados © 2020</p>
     </footer>
-  <script src="./js/linkScroll.js"></script>
-  <script src="./js/menuToggle.js"></script>
+    <script src="./js/linkScroll.js"></script>
+    <script src="./js/menuToggle.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- custom slider habitaciones -->
+    <script src="js/custom_carrusel_hab.js"></script>
   </body>
 </html>
