@@ -20,45 +20,42 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-contacto section-xl flx-ja-cc">
-        <div class="logo-container">
-          <a href="#" class="logo-img">
-            <img src="./img/logo/karamolle1.png" alt="Logo EDsoft" />
+      <div class="header__contacto section-xl flx-ja-cc">
+        <div class="logo">
+          <a href="#" class="logo__img">
+            <img class="logo__desktop" src="./img/logo/karamolle1.png" alt="Logo hotel" />
+            <img class="logo__responsive" src="./img/logo/hotel_name.JPG" alt="Logo hotel">
           </a>
         </div>
-        <div class="header-wsp flx-a-c">
-          <p>Mejor tarifa garantizada</p>
-          <h2>Reservas al whatsapp</h2>
-          <a class="a-wsp" href="#">Reservar</a>
+        <div class="wsp flx-a-c">
+          <p class="wsp__message">Mejor tarifa garantizada</p>
+          <h2 class="wsp__reservar">Reservas al whatsapp</h2>
+          <a class="wsp__link" href="#">Reservar</a>
         </div>
       </div>
       <!--  -->
 
-      <div class="header-menu section-xl flx-a-c">
+      <div class="header-menu section-xl">
         <div id="button-toggle" class="button-toggle">
           <div class="linea-toggle"></div>
         </div>
         <div class="header-nav" id="menu-container">
-          <nav id="menu-toggle">
-            <ul class="flx-a-c" id="ul-menu">
-              <li>
-                <a class="header-option" href="#inicio">Inicio</a>
+          <nav class="main-nav" id="menu-toggle">
+            <ul class="main-nav__list flx-a-c" id="ul-menu">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="./index.html">Inicio</a>
               </li>
-              <li>
-                <a class="header-option" href="#servicios">Servicios</a>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="./index.html#servicios">Servicios</a>
               </li>
-              <li>
-                <a class="header-option" href="#quienessomos"
-                  >¿Quienes somos?</a
-                >
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="./index.html#quienessomos">¿Quienes somos?</a>
               </li>
-              <li>
-                <a class="header-option" href="#galeria">Galeria</a>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#./index.html#galeria">Galeria</a>
               </li>
-              <li>
-                <a class="header-option" href="./habitaciones.html"
-                  >Habitaciones</a
-                >
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="./habitaciones.html">Habitaciones</a>
               </li>
             </ul>
           </nav>
@@ -98,15 +95,57 @@
       </section>
       <!--  -->
       <section class="section-servicios" id="servicios">
-        <div class="wrapper-servicios"></div>
+        <div class="wrapper-servicios flx-a-c section-xl">
+          <div class="servicios__info">
+            <h2>SERVICIOS</h2>
+          </div>
+          <div class="servicios__img-1">
+            <div class="servicios__img-2">
+              <div class="servicios__img-3">
+                <div class="servicios__img-4">
+                  <img src="./img/hotelFotos/hotel-servicios.jpeg" alt="hotel-service">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!--  -->
       <section class="section-quienesSomos" id="quienessomos">
-        <div class="wrapper-quienesSomos"></div>
+        <div class="wrapper-quienesSomos">
+          <div class="quienes-somos__part1 flx-a-c section-l">
+            <h2>¿QUIÉNES SOMOS?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, aspernatur, placeat corrupti atque distinctio voluptatem accusantium sapiente ducimus animi ea possimus laboriosam autem beatae corporis ex quas! Iste, earum neque?</p>
+          </div>
+          <div class="quienes-somos__part2-wrapper">
+            <div class="quienes-somos__part2 flx-a-c section-l">
+              <img src="./img/hotelFotos/hotel.jpg" alt="foto_hotel">
+              <div class="quienes-somos__description">
+                <h2>Nuestros clientes son primero</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, ad est, ea ex eos repellendus aspernatur, dolores quibusdam cumque animi quia iure sequi vero magnam ut quam ratione commodi dignissimos.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit alias aliquid voluptates unde cupiditate deserunt odio modi temporibus, quis earum reiciendis officiis accusamus sequi, at dolor? In nulla possimus ab!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!--  -->
       <section class="section-galeria" id="galeria">
         <div class="wrapper-galeria"></div>
+      </section>
+      <section class="wrapper-maps">
+        <div class="section-maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3794.3598211560006!2d-70.2503054!3d-18.0084973!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915acf7a882d45a3%3A0xbfca1dc26ab789d!2sHostal%20Karamolle!5e0!3m2!1ses-419!2spe!4v1659448776825!5m2!1ses-419!2spe"
+            width="100%"
+            height="600"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
     </main>
     <!--  -->

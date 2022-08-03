@@ -22,47 +22,42 @@
 
   <body>
     <header class="header">
-      <div class="header-contacto section-xl flx-ja-cc">
-        <div class="logo-container">
-          <a href="#" class="logo-img">
-            <img src="./img/logo/karamolle1.png" alt="Logo EDsoft" />
+      <div class="header__contacto section-xl flx-ja-cc">
+        <div class="logo">
+          <a href="#" class="logo__img">
+            <img class="logo__desktop" src="./img/logo/karamolle1.png" alt="Logo hotel" />
+            <img class="logo__responsive" src="./img/logo/hotel_name.JPG" alt="Logo hotel">
           </a>
         </div>
-        <div class="header-wsp flx-a-c">
-          <p>Mejor tarifa garantizada</p>
-          <h2>Reservas al whatsapp</h2>
-          <a class="a-wsp" href="#">Reservar</a>
+        <div class="wsp flx-a-c">
+          <p class="wsp__message">Mejor tarifa garantizada</p>
+          <h2 class="wsp__reservar">Reservas al whatsapp</h2>
+          <a class="wsp__link" href="#">Reservar</a>
         </div>
       </div>
       <!--  -->
 
-      <div class="header-menu section-xl flx-a-c">
+      <div class="header-menu section-xl">
         <div id="button-toggle" class="button-toggle">
           <div class="linea-toggle"></div>
         </div>
         <div class="header-nav" id="menu-container">
-          <nav id="menu-toggle">
-            <ul class="flx-a-c" id="ul-menu">
-              <li>
-                <a class="header-option" href="./index.html">Inicio</a>
+          <nav class="main-nav" id="menu-toggle">
+            <ul class="main-nav__list flx-a-c" id="ul-menu">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="./index.html">Inicio</a>
               </li>
-              <li>
-                <a class="header-option" href="./index.html#servicios"
-                  >Servicios</a
-                >
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="./index.html#servicios">Servicios</a>
               </li>
-              <li>
-                <a class="header-option" href="./index.html#quienessomos"
-                  >¿Quienes somos?</a
-                >
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="./index.html#quienessomos">¿Quienes somos?</a>
               </li>
-              <li>
-                <a class="header-option" href="#./index.html#galeria"
-                  >Galeria</a
-                >
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#./index.html#galeria">Galeria</a>
               </li>
-              <li>
-                <a class="header-option" href="#">Habitaciones</a>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Habitaciones</a>
               </li>
             </ul>
           </nav>
@@ -71,510 +66,502 @@
     </header>
     <!--  -->
     <main class="main">
-      <section class="section-habitaciones container-hk" id="habitaciones">
-        <div class="wrapper-habitaciones row-hk">
+      <section class="section-habitaciones" id="habitaciones">
+        <div class="wrapper-habitaciones section-xl">
           <div class="habitaciones-info">
-            <h3>Una excelente experiencia y confort</h3>
-            <h2>NUESTRAS HABITACIONES</h2>
+            <h3 class="habitaciones-info__h3">Una excelente experiencia y confort</h3>
+            <h2 class="habitaciones-info__title">NUESTRAS HABITACIONES</h2>
           </div>
           <div class="swiper slide-habitaciones">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <div>
-                  <div class="habitaciones-titulo">
+                <div class="habitaciones-titulo">
                     <img
                       src="./img/habitaciones/presidencial.jpeg"
                       alt=""
                       class="img-fluid"
                     />
                     <h1>PRESIDENCIAL</h1>
-                  </div>
-                  <div class="habitacion-description">
-                    <h2>Servicios:</h2>
+                </div>
+                <div class="habitacion-description">
+                    <h2 class="habitacion-description__title">Servicios:</h2>
                     <div class="services flx-a-c">
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-cama.svg"
                           alt=""
                         />
                         <p>1 cama</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-ducha.svg"
                           alt=""
                         />
                         <p>Ducha</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-tina.svg"
                           alt=""
                         />
                         <p>Jacuzzi</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-baño.svg"
                           alt=""
                         />
                         <p>Baño</p>
                       </div>
-                      <div class="icon-container flx-a-c desactivado">
+                      <div class="icon-service flx-a-c desactivado">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-check.svg"
                           alt=""
                         />
                         <p>Recepcion 24h</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-wifi.svg"
                           alt=""
                         />
                         <p>Wifi</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons//icon-hbo.svg"
                           alt=""
                         />
                         <p>HBO</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-netflix.svg"
                           alt=""
                         />
                         <p>Netflix</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-telefono.svg"
                           alt=""
                         />
                         <p>Teléfono</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-izonorizacion.svg"
                           alt=""
                         />
                         <p>Izonorización</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-sala.svg"
                           alt=""
                         />
                         <p>Sofa</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-tv.svg"
                           alt=""
                         />
                         <p>Televisión</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-ventilador.svg"
                           alt=""
                         />
                         <p>Ventilador</p>
                       </div>
                     </div>
-                  </div>
-                  <div class="habitacion-reservar flx-ja-cc">
-                    <a class="a-wsp" href="#">Reservar</a>
-                  </div>
+                </div>
+                <div class="habitacion-reservar flx-ja-cc">
+                <a class="a-wsp" href="#">Reservar</a>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div>
-                  <div class="habitaciones-titulo">
+                <div class="habitaciones-titulo">
                     <img
                       src="./img/habitaciones/individual.jpg"
                       alt=""
                       class="img-fluid"
                     />
                     <h1>Individual</h1>
-                  </div>
-                  <div class="habitacion-description">
-                    <h2>Servicios:</h2>
+                </div>
+                <div class="habitacion-description">
+                    <h2 class="habitacion-description__title">Servicios:</h2>
                     <div class="services flx-a-c">
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-cama.svg"
                           alt=""
                         />
                         <p>1 cama</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-ducha.svg"
                           alt=""
                         />
                         <p>Ducha</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-tina.svg"
                           alt=""
                         />
                         <p>Jacuzzi</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-baño.svg"
                           alt=""
                         />
                         <p>Baño</p>
                       </div>
-                      <div class="icon-container flx-a-c desactivado">
+                      <div class="icon-service flx-a-c desactivado">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-check.svg"
                           alt=""
                         />
                         <p>Recepcion 24h</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-wifi.svg"
                           alt=""
                         />
                         <p>Wifi</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons//icon-hbo.svg"
                           alt=""
                         />
                         <p>HBO</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-netflix.svg"
                           alt=""
                         />
                         <p>Netflix</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-telefono.svg"
                           alt=""
                         />
                         <p>Teléfono</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-izonorizacion.svg"
                           alt=""
                         />
                         <p>Izonorización</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-sala.svg"
                           alt=""
                         />
                         <p>Sofa</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-tv.svg"
                           alt=""
                         />
                         <p>Televisión</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-ventilador.svg"
                           alt=""
                         />
                         <p>Ventilador</p>
                       </div>
                     </div>
-                  </div>
-                  <div class="habitacion-reservar flx-ja-cc">
+                </div>
+                <div class="habitacion-reservar flx-ja-cc">
                     <a class="a-wsp" href="#">Reservar</a>
-                  </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div>
-                  <div class="habitaciones-titulo">
+                <div class="habitaciones-titulo">
                     <img
                       src="./img/habitaciones/doble.jpg"
                       alt=""
                       class="img-fluid"
                     />
                     <h1>Doble</h1>
-                  </div>
-                  <div class="habitacion-description">
-                    <h2>Servicios:</h2>
+                </div>
+                <div class="habitacion-description">
+                    <h2 class="habitacion-description__title">Servicios:</h2>
                     <div class="services flx-a-c">
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-cama.svg"
                           alt=""
                         />
                         <p>1 cama</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-ducha.svg"
                           alt=""
                         />
                         <p>Ducha</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-tina.svg"
                           alt=""
                         />
                         <p>Jacuzzi</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-baño.svg"
                           alt=""
                         />
                         <p>Baño</p>
                       </div>
-                      <div class="icon-container flx-a-c desactivado">
+                      <div class="icon-service flx-a-c desactivado">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-check.svg"
                           alt=""
                         />
                         <p>Recepcion 24h</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-wifi.svg"
                           alt=""
                         />
                         <p>Wifi</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons//icon-hbo.svg"
                           alt=""
                         />
                         <p>HBO</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-netflix.svg"
                           alt=""
                         />
                         <p>Netflix</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-telefono.svg"
                           alt=""
                         />
                         <p>Teléfono</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-izonorizacion.svg"
                           alt=""
                         />
                         <p>Izonorización</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-sala.svg"
                           alt=""
                         />
                         <p>Sofa</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-tv.svg"
                           alt=""
                         />
                         <p>Televisión</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-ventilador.svg"
                           alt=""
                         />
                         <p>Ventilador</p>
                       </div>
                     </div>
-                  </div>
-                  <div class="habitacion-reservar flx-ja-cc">
+                </div>
+                <div class="habitacion-reservar flx-ja-cc">
                     <a class="a-wsp" href="#">Reservar</a>
-                  </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div>
-                  <div class="habitaciones-titulo">
+                <div class="habitaciones-titulo">
                     <img
                       src="./img/habitaciones/triple.png"
                       alt=""
                       class="img-fluid"
                     />
                     <h1>Triple</h1>
-                  </div>
-                  <div class="habitacion-description">
-                    <h2>Servicios:</h2>
+                </div>
+                <div class="habitacion-description">
+                    <h2 class="habitacion-description__title">Servicios:</h2>
                     <div class="services flx-a-c">
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-cama.svg"
                           alt=""
                         />
                         <p>1 cama</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-ducha.svg"
                           alt=""
                         />
                         <p>Ducha</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-tina.svg"
                           alt=""
                         />
                         <p>Jacuzzi</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-baño.svg"
                           alt=""
                         />
                         <p>Baño</p>
                       </div>
-                      <div class="icon-container flx-a-c desactivado">
+                      <div class="icon-service flx-a-c desactivado">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-check.svg"
                           alt=""
                         />
                         <p>Recepcion 24h</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-wifi.svg"
                           alt=""
                         />
                         <p>Wifi</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons//icon-hbo.svg"
                           alt=""
                         />
                         <p>HBO</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-netflix.svg"
                           alt=""
                         />
                         <p>Netflix</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-telefono.svg"
                           alt=""
                         />
                         <p>Teléfono</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-izonorizacion.svg"
                           alt=""
                         />
                         <p>Izonorización</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-sala.svg"
                           alt=""
                         />
                         <p>Sofa</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-tv.svg"
                           alt=""
                         />
                         <p>Televisión</p>
                       </div>
-                      <div class="icon-container flx-a-c">
+                      <div class="icon-service flx-a-c">
                         <img
-                          class="icon"
+                          class="icon-service__img"
                           src="./img/icons/icon-ventilador.svg"
                           alt=""
                         />
                         <p>Ventilador</p>
                       </div>
                     </div>
-                  </div>
-                  <div class="habitacion-reservar flx-ja-cc">
+                </div>
+                <div class="habitacion-reservar flx-ja-cc">
                     <a class="a-wsp" href="#">Reservar</a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -590,9 +577,10 @@
           </div>
         </div>
       </section>
+
       <section class="wrapper-places">
         <div class="place flx-a-c">
-          <div class="place-info flx-ja-cc">
+          <div class="place__info flx-ja-cc">
             <h2>Hostal Karamolle</h2>
             <h3>Habitaciones</h3>
             <p>
@@ -603,12 +591,12 @@
             </p>
             <a href="#">RESERVAR</a>
           </div>
-          <div class="place-img">
+          <div class="place__img">
             <img src="./img/habitaciones/place-cuarto.webp" alt="" />
           </div>
         </div>
         <div class="place flx-a-c">
-          <div class="place-info flx-ja-cc">
+          <div class="place__info flx-ja-cc">
             <h2>Hostal Karamolle</h2>
             <h3>Restaurante</h3>
             <p>
@@ -619,12 +607,12 @@
             </p>
             <a href="#">RESERVAR</a>
           </div>
-          <div class="place-img">
+          <div class="place__img">
             <img src="./img/habitaciones/place-restaurant.jpg" alt="" />
           </div>
         </div>
         <div class="place flx-a-c">
-          <div class="place-info flx-ja-cc">
+          <div class="place__info flx-ja-cc">
             <h2>Hostal Karamolle</h2>
             <h3>Bar</h3>
             <p>
@@ -635,7 +623,7 @@
             </p>
             <a href="#">RESERVAR</a>
           </div>
-          <div class="place-img">
+          <div class="place__img">
             <img src="./img/habitaciones/place-bar.jpg" alt="" />
           </div>
         </div>
@@ -663,7 +651,6 @@
 
     <script src="./js/linkScroll.js"></script>
     <script src="./js/menuToggle.js"></script>
-    <!-- <script src="./js/carrusel.js"></script> -->
 
     <!-- swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

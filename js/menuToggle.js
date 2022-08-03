@@ -4,8 +4,8 @@ const buttonToggle=document.getElementById('button-toggle'),
 
 const XD=()=>{
     buttonToggle.classList.toggle('active')
-    menuContainer.classList.toggle('toggle-containerActive')
-    menuToggle.classList.toggle('menu-toggle-active')
+    menuContainer.classList.toggle('menu-container__active')
+    menuToggle.classList.toggle('menu-toggle__active')
 }
 buttonToggle.addEventListener('click',(e)=>{
     XD()
@@ -16,4 +16,3 @@ buttonToggle.addEventListener('click',(e)=>{
         }
     })
 })
-
