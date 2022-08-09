@@ -18,13 +18,27 @@ ul {
 }
 a {
   text-decoration: none;
-  display: inline-block;
+  display: block;
   color: black;
 }
 p,h1,h2,h3,h4,pre {
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #b3b3b3;
+}
 
 /****flex****/
 .flx-a-c {
@@ -378,7 +392,27 @@ img {
   font-size: 2.2rem;
 }
 /* contenedor de cada habitacion */
+.mySwiper{
+  padding: 1.5rem 0rem 2rem 0rem
+}
+.room__galeria .mySwiper{
+  padding: 0;
+  border-radius: .5rem;
+  box-shadow: 0px 0px 10px rgb(204, 204, 204) ;
+}
+.room__galeria .swiper-button-prev{
+  left: 15px;
+}
+.room__galeria .swiper-button-next{
+  right: 15px;
+}
 .swiper-slide{
+  padding: 0 .8rem;
+}
+.room__galeria .swiper-slide{
+  padding: 0;
+}
+.swiper-slide-v{
   border-radius: .5rem;
   background-color: white;
   box-shadow: 0px 0px 10px rgb(204, 204, 204) ;
@@ -386,10 +420,17 @@ img {
 /* habitaciones imagen y su titulo */
 .habitaciones-titulo {
   height: 32vh;
-}
-.habitaciones-titulo img {
+  overflow: hidden;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
+}
+.habitaciones-titulo img{
+  transform: scale(1);
+  transition: transform .5s;
+  transition-delay: .2s;
+}
+.habitaciones-titulo img:hover{
+  transform: scale(1.2);
 }
 .habitaciones-titulo h1 {
   letter-spacing: 0.1em;
@@ -414,6 +455,7 @@ img {
 /* description */
 .habitacion-description {
   padding: 0.5rem;
+  height: 18.5vh;
 }
 .habitacion-description__title {
   color: rgb(60, 60, 60);
@@ -521,12 +563,155 @@ img {
 iframe {
   display: block;
 }
+
+
+/* page-reservar-room */
+.room-container{
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+
+}
+.room{
+  width: 100%;
+  display: flex;
+  padding: 2rem 1rem;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.room__galeria{
+  width: 46vw;
+  height: 55vh;
+}
+.room__galeria img{
+  border-radius: .5rem;
+}
+.room__foto{
+  width: 100%;
+  height: 55vh;
+  border-radius: .5rem;
+}
+.room__info{
+  height: 55vh;
+  flex-grow: 1;
+  background-color: #ffffff;
+  border-radius: .5rem;
+  box-shadow: 0px 0px 10px rgb(204 204 204);
+  display: flex;
+  flex-direction: column;
+}
+
+.room__price-wrapper{
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #cccccc;
+}
+.room__price{
+  margin-top: 0;
+  background-color: #1c8013;
+  color: #fff;
+  border: none;
+  padding: 0.3rem 1rem;
+  font-size: 1.4rem;
+  border-radius: .3rem;
+}
+.room__services{
+  margin: .5rem 2rem;
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+.room__services p{
+  font-size: 1.1rem;
+}
+.room__services h2{
+  font-size: 1.4rem;
+}
+.room__services .services{
+  gap: .5rem;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+}
+
+
+.room__reservar-wrapper{
+  padding: 1rem 2rem;
+  border-top: 1px solid #cccccc;
+
+}
+.room__reservar {
+  margin-top: 0;
+  background-color: #1c8013;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  transition: transform .4s;
+  text-align: center;
+  border-radius: .3rem;
+}
+.room__reservar:hover {
+  transform: scale(1.1);
+}
+.room__description-container{
+  padding: 0 1rem 3rem 1rem;
+}
+.room__description{
+  height: 30vh;
+  background-color: #ffffff;
+  border-radius: .5rem;
+  box-shadow: 0px 0px 10px rgb(204 204 204);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 3rem;
+}
+.room__title{
+  font-size: 1.6rem;
+  padding-bottom: .8rem;
+  font-weight: 800;
+}
+.room__tittle2{
+  font-size: 1.2rem;
+  color: rgb(70, 70, 70);
+  font-weight: 700;
+  padding: 0 2rem;
+  padding-bottom: .4rem;
+}
+.room__details{
+  font-size: 1rem;
+  color: rgb(82, 82, 82);
+  font-weight: 500;
+  letter-spacing: .05rem;
+  padding: 0 2rem;
+  padding-bottom: 1rem;
+}
+.room__title-wrapper{
+  overflow-y: auto;
+}
+
+
+
+
+
+
+@media screen and (max-width:2700px) {
+  .room.section-l{
+    max-width: 1400px;
+  }
+  .room__description-container.section-l{
+    max-width: 1400px;
+  }
+}
+
 @media screen and (max-width:1600px) {
   html{
     font-size: 16px;
   }
   .section-xl {
     max-width: 1300px;
+  }
+  .room.section-l{
+    max-width: 1100px;
+  }
+  .room__description-container.section-l{
+    max-width: 1100px;
   }
 }
 @media screen and (max-width:1280px) {
@@ -536,8 +721,66 @@ iframe {
   .section-xl {
     max-width: 1100px;
   }
+
+    /* Servicios */
+    .wrapper-servicios{
+      flex-direction: column;
+    }
+    .servicios__info{
+      width: 90vw;
+      height: 70vh;
+      background-color: black;
+      border-radius: 1.2rem;
+    }
+    .servicios__img-1{
+      width: 90vw;
+      height: 70vh;
+      padding: 1rem;
+    }
+    .servicios__img-2{
+      padding: 1.3rem;
+    }
+    .servicios__img-3{
+      padding: 1.6rem;
+    }
+    .servicios__img-4 img{
+      width: 70vw;
+      height: 45vh;
+    }
+  
+    /* quienes somos */
+    .quienes-somos__part1{
+      flex-direction: column;
+      padding: 1rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    .quienes-somos__part2{
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .quienes-somos__part1 h2{
+      width: 100%;
+    }
+    .quienes-somos__part1 p{
+      width: 100%;
+    }
+  
+    .quienes-somos__part2 img{
+      width: 90%;;
+      height: 50vh;
+    }
+    .quienes-somos__description{
+      width: 100%;
+      padding: 1rem;
+    }
 }
 @media screen and (max-width:640px) {
+  html{
+    font-size: 15px;
+  }
+
   /* menu mobile */
   .header-nav{
     display: none;
@@ -565,6 +808,9 @@ iframe {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     z-index:60;
+  }
+  .habitaciones-info__title{
+    font-size: 1.5rem;
   }
   .menu-toggle__active{
     width: 70%;
@@ -649,4 +895,44 @@ iframe {
   .section-xl.header__contacto {
     margin-left: 1rem;
   }
+
+  /* room */
+  .room{
+    order: 2;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+  }
+  .room__description{
+    order: 1;
+  }
+  .room__galeria{
+    width: 100%;
+    height: 40vh;
+  }
+  .room__foto{
+    height: 40vh;
+  }
+  .room__info{
+    height: 40vh;
+  }
+  .room__description-container{
+    padding: 2rem 1rem 0rem 1rem;
+  }
+  .room__description{
+    height: 35vh;
+    padding: 1.5rem;
+  }
+}
+
+.slide-habitaciones{
+  height: max-content;
+  padding: 2rem 0rem !important;
+}
+.swiper-button-next, .swiper-button-prev{
+color: #000 !important;
+}
+.swiper-pagination-bullet{
+  background-color: #000 !important;
+  box-shadow: 0px 0px 10px 2px #ececec;
 }
